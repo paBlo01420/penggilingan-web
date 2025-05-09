@@ -1,0 +1,6 @@
+/* src/index.css */
+/* Import seluruh Tailwind sekaligus */
+@import "tailwindcss";
+
+/* Jika kamu masih pakai custom components.css: */
+@import "./assets/styles/components.css";
