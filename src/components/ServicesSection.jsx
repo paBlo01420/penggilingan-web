@@ -15,9 +15,9 @@ export default function ServicesSection() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/layanan") // ganti sesuai URL backend Laravel kamu
+      .get("http://localhost:8000/api/layanan")
       .then((res) => {
-        setServices(res.data.data); // ambil array dari key "data"
+        setServices(res.data.data);
         setLoading(false);
       })
       .catch((err) => {
