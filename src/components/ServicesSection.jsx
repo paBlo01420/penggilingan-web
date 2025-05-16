@@ -1,27 +1,25 @@
 // src/components/ServicesSection.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import { FaDrumstickBite, FaFish, FaConciergeBell } from "react-icons/fa";
 
 const services = [
   {
     title: "Penggilingan Bakso",
-    description:
-      "Adonan bakso berkualitas dari daging sapi premium, siap untuk diproses lebih lanjut.",
-    Icon: BaksoIcon,
+    description: "Adonan bakso berkualitas dari daging sapi premium...",
+    Icon: FaDrumstickBite,
     link: "#",
   },
   {
     title: "Model Bakso & Pempek",
-    description:
-      "Variasi bakso urat, bakso halus, dan pempek ikan khas Lubuklinggau.",
-    Icon: PempekIcon,
+    description: "Variasi bakso urat, bakso halus...",
+    Icon: FaFish,
     link: "#",
   },
   {
     title: "Penggilingan Daging",
-    description:
-      "Layanan giling daging sapi, ayam, dan ikan untuk kebutuhan rumah tangga atau bisnis.",
-    Icon: DagingIcon,
+    description: "Layanan giling daging sapi, ayam...",
+    Icon: FaConciergeBell,
     link: "#",
   },
 ];
@@ -45,11 +43,7 @@ export default function ServicesSection() {
               initial="hidden"
               animate="visible"
             >
-              <img
-                src={svc.icon}
-                alt={svc.title}
-                className="mx-auto mb-4 w-12 h-12"
-              />
+              <svc.Icon className="mx-auto mb-4 w-12 h-12 text-green-600" />
               <h3 className="text-xl font-semibold mb-2">{svc.title}</h3>
               <p className="text-gray-600 mb-4">{svc.description}</p>
               <a href={svc.link} className="text-green-600 hover:underline">
