@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Quick Links */}
         <div>
-          <h44 className="font-semibold mb-4">Quick Links</h44>
+          <h4 className="font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
             {[
               "Beranda",

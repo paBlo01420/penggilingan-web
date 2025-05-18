@@ -1,26 +1,13 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import StatsSection from "./components/StatsSection";
-import ServicesSection from "./components/ServicesSection";
-import EducationSection from "./components/EducationSection";
-import VisionSection from "./components/VisionSection";
-import TestimonialsSection from "./components/TestimonialsSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <StatsSection />
-      <ServicesSection />
-      <EducationSection />
-      <VisionSection />
-      <TestimonialsSection />
-      <ContactSection />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 export default App;
